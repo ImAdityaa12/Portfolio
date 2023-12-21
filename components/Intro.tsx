@@ -44,7 +44,7 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ const Intro = () => {
         <span className="font-bold">captivating layouts</span> and{" "}
         <span> bring them to life</span>{" "}
         <span className="underline">with Code</span>.
-      </motion.p>
+      </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
@@ -81,13 +81,15 @@ const Intro = () => {
         </a>
         <a
           href="https://www.linkedin.com/in/aditya-raj-gupta-089393215/"
-          className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[115] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/ImAdityaa12"
-          className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[115] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
         >
           <BsGithub />
         </a>
