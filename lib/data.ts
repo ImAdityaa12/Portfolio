@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import genicraft from "@/public/Genicraft.png";
 import CinemaVerse from "@/public/CinemaVerse.png";
 import ShopIt from "@/public/ShopIt.png";
+import MetaVersus from "@/public/MetaVersus.png";
 
 export const links = [
   {
@@ -62,25 +63,36 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "GeniCraft",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "GeniCraft: AI web app ensures secure logins (Clerk), coding support (OpenAI), and aids creative projects with music and videos (Replicate).",
+    tags: ["Next.js", "Tailwind", "Open AI API", "Replicate API"],
     imageUrl: genicraft,
+    url: "https://geni-craft.vercel.app",
   },
   {
-    title: "rmtDev",
+    title: "CinemaVerse",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "CinemaVerse: React, Redux Toolkit, TMDb API integration for a user-friendly interface, popular listings, detailed pages, reviews, and immersive movie-watching.",
+    tags: ["React", "JavaScript", "TMDB API", "SASS", "Redux Toolkit"],
     imageUrl: CinemaVerse,
+    url: "https://cinemaverseaditya.netlify.app/",
   },
   {
-    title: "Word Analytics",
+    title: "Shop It",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Shop It: React and Strapi ecommerce, seamless shopping, diverse products, detailed descriptions, Stripe integration for security, and an intuitive interface for efficiency.",
+    tags: ["React", "JavaScript", "Strapi", "SASS"],
     imageUrl: ShopIt,
+    url: "https://github.com/ImAdityaa12/Shop-It",
+  },
+  {
+    title: "MetaVersus",
+    description:
+      "MetaVersus: Next.js 13 with Framer Motion and Tailwind CSS for stylish design, fluid animations, seamless transitions, and interactive elements for an engaging user experience.",
+    tags: ["Next.Js", "JavaScript", "Framer Motion", "Tailwind CSS"],
+    imageUrl: MetaVersus,
+    url: "https://metaversus-aditya.netlify.app/",
   },
 ] as const;
 
