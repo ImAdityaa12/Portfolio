@@ -1,11 +1,24 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import SectionHeading from "./Section-Heading";
 import { projectsData } from "@/lib/data";
 import Project from "./Project";
+import { useInView } from "react-intersection-observer";
+import { useActiveContext } from "@/context/active-section-context";
 
 const Projects = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Projects");
+    }
+  }, [inView, setActiveSection]);
   return (
-    <section id="projects" className="scroll-m-28">
+    <section id="projects" className="scroll-m-28" ref={ref}>
       <SectionHeading title="My Projects" />
       {projectsData.map((project, index) => (
         <React.Fragment key={index}>

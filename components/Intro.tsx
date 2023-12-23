@@ -1,16 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useActiveContext } from "@/context/active-section-context";
+import { useInView } from "react-intersection-observer";
 const Intro = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
   return (
     <section
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-m-28"
       id="home"
+      ref={ref}
     >
       <div className="flex items-center justify-center">
         <div className="relative">
