@@ -36,28 +36,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Greater Noida, Greater Noida",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I am actively seeking professional opportunities to leverage my expertise as a Front-End Developer, specializing in TypeScript and React. Eager to contribute to impactful projects with a commitment to excellence and innovation.",
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bramhaand Inc.",
+    location: "Greater Noida, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I bring hands-on experience from a 3-month Front-End Developer internship, where I upskilled in TypeScript and React, transforming Figma designs into fully functional websites with precision and creativity.",
+    icon: React.createElement(CgWorkAlt),
+    date: "September 2023",
+  },
+  {
+    title: "Sharda University",
+    location: "Greater Noida, India",
+    description:
+      "I am currently pursuing a B.Tech in Computer Science and Engineering, passionately delving into the realm of Frontend Technologies to complement my academic journey with practical skills and hands-on experience.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024",
   },
 ] as const;
 
@@ -103,17 +103,14 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Redux Toolkit",
+  "SASS",
   "Framer Motion",
+  "After Effects",
+  "Premiere Pro",
+  "Figma",
+  "Adobe Photoshop",
 ] as const;
