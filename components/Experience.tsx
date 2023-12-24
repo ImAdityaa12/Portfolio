@@ -14,7 +14,7 @@ const Experience = () => {
   const ref = useActiveSection("Experience", 0.4);
 
   return (
-    <section id="experience" className="scroll-m-28" ref={ref}>
+    <section id="experience" className="scroll-m-28 mb-28 sm:mb-40" ref={ref}>
       <SectionHeading title="My Experience" />
       <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map((experience, index) => (
