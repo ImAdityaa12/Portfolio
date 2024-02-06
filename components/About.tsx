@@ -11,9 +11,16 @@ const About = () => {
     <motion.section
       className="mb-28 max-w-[45rem] text-center leading-8 scroll-m-28"
       id="about"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      // initial={{ opacity: 0, y: 100 }}
+      // animate={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 100 },
+      }}
+      transition={{ delay: 0.175, duration: 0.2 }}
       ref={ref}
     >
       <SectionHeading title="About Me" />

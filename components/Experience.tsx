@@ -10,12 +10,25 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useActiveSection } from "@/lib/hooks";
 import { useThemeContext } from "@/context/themeContext";
+import { animate, motion } from "framer-motion";
 
 const Experience = () => {
   const ref = useActiveSection("Experience", 0.4);
   const { theme } = useThemeContext();
   return (
-    <section id="experience" className="scroll-m-28 mb-28 sm:mb-40" ref={ref}>
+    <motion.section
+      id="experience"
+      className="scroll-m-28 mb-28 sm:mb-40"
+      ref={ref}
+      variants={{
+        visible: { scale: 1, y: 0, opacity: 1 },
+        hidden: { scale: 0.8, y: "200px", opacity: 0 },
+      }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+    >
       <SectionHeading title="My Experience" />
       <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map((experience, index) => (
@@ -53,7 +66,7 @@ const Experience = () => {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 };
 

@@ -20,11 +20,17 @@ const Intro = () => {
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial="hidden"
+            whileInView="visible"
+            // animate={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            variants={{
+              visible: { opacity: 1, scale: 1, y: 0 },
+              hidden: { opacity: 0, scale: 0.5, y: 100 },
+            }}
             transition={{
               type: "tween",
-              duration: 0.2,
+              duration: 0.4,
             }}
           >
             <Image
@@ -39,8 +45,15 @@ const Intro = () => {
           </motion.div>
           <motion.span
             className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial="hidden"
+            whileInView="visible"
+            // initial={{ opacity: 0, scale: 0 }}
+            // animate={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            variants={{
+              visible: { opacity: 1, scale: 1, y: 0 },
+              hidden: { opacity: 0, scale: 0, y: 100 },
+            }}
             transition={{
               type: "spring",
               stiffness: 125,
@@ -54,8 +67,18 @@ const Intro = () => {
       </div>
       <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 100 },
+        }}
+        // initial={{ opacity: 0, y: 100 }}
+        viewport={{ once: false }}
+        // animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.4,
+        }}
       >
         <span className="font-bold">Hello, I&apos;m Aditya,</span> a
         <span className="font-bold"> Front-End </span>enthusiast in React,
@@ -66,10 +89,18 @@ const Intro = () => {
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
+        // initial={{ opacity: 0, y: 100 }}
+        // animate={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 100 },
+        }}
+        viewport={{ once: false }}
         transition={{
-          delay: 0.1,
+          delay: 0.2,
+          duration: 0.3,
         }}
       >
         <Link

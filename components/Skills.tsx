@@ -7,7 +7,7 @@ import { useActiveSection } from "@/lib/hooks";
 import { animate, motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
-  inital: {
+  initial: {
     opacity: 0,
     y: 100,
   },
@@ -33,13 +33,21 @@ const Skills = () => {
           <motion.li
             key={index}
             className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            variants={fadeInAnimationVariants}
-            initial="inital"
-            animate="animate"
-            whileInView="animate"
-            viewport={{
-              once: true,
+            // variants={fadeInAnimationVariants}
+            variants={{
+              visible: { scale: 1, y: 0 },
+              hidden: { scale: 0, y: "200px" },
             }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            // initial="inital"
+            // animate="animate"
+            // whileInView="animate"
+            // viewport={{
+            //   once: true,
+            // }}
             custom={index}
           >
             {skill}
