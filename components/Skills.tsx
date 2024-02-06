@@ -30,24 +30,42 @@ const Skills = () => {
       <SectionHeading title="My Skills" />
       <ul className="flex flex-wrap justify-center gap-2">
         {skillsData.map((skill, index) => (
+          <>
+            <motion.li
+              key={index}
+              className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 max-lg:hidden"
+              // variants={fadeInAnimationVariants}
+              variants={{
+                visible: { scale: 1, y: 0 },
+                hidden: { scale: 0, y: "200px" },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
+              // initial="inital"
+              // animate="animate"
+              // whileInView="animate"
+              // viewport={{
+              //   once: true,
+              // }}
+              custom={index}
+            >
+              {skill}
+            </motion.li>
+          </>
+        ))}
+        {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            // variants={fadeInAnimationVariants}
-            variants={{
-              visible: { scale: 1, y: 0 },
-              hidden: { scale: 0, y: "200px" },
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 lg:hidden"
+            variants={fadeInAnimationVariants}
+            initial="inital"
+            animate="animate"
+            whileInView="animate"
+            viewport={{
+              once: true,
             }}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            // initial="inital"
-            // animate="animate"
-            // whileInView="animate"
-            // viewport={{
-            //   once: true,
-            // }}
             custom={index}
           >
             {skill}
