@@ -41,7 +41,7 @@ const Skills = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             // initial="inital"
             // animate="animate"
             // whileInView="animate"
