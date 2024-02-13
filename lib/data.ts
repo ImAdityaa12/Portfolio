@@ -36,12 +36,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Front-End Developer",
+    title: "PrudentBit",
     location: "Greater Noida, Greater Noida",
     description:
-      "I am actively seeking professional opportunities to leverage my expertise as a Front-End Developer, specializing in TypeScript and React. Eager to contribute to impactful projects with a commitment to excellence and innovation.",
+      "As a Frontend developer at PrudentBit, I specialize in creating intuitive interfaces using Next.js, TypeScript, and Tailwind CSS. My expertise lies in translating Figma designs into dynamic and responsive websites, ensuring high-quality solutions aligned with client objectives and industry standards",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2024 - present",
   },
   {
     title: "Bramhaand Inc.",
