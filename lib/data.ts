@@ -6,6 +6,7 @@ import genicraft from "@/public/Genicraft.png";
 import CinemaVerse from "@/public/CinemaVerse.png";
 import ShopIt from "@/public/ShopIt.png";
 import MetaVersus from "@/public/MetaVersus.png";
+import { BsCode } from "react-icons/bs";
 
 export const links = [
   {
@@ -36,12 +37,20 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Edvanta Technologies",
+    location: "Noida",
+    description:
+      "Worked as a Full-stack Developer on a scalable web application using Vue.js and Express.js, ensuring seamless frontend-backend integration and robust security measures. Collaborated with designers and QA engineers to deliver high-quality web pages and components, and participated in code reviews and optimization efforts.",
+    icon: React.createElement(BsCode),
+    date: "August 2024 - Present",
+  },
+  {
     title: "PrudentBit",
     location: "Greater Noida, Greater Noida",
     description:
       "As a Frontend developer at PrudentBit, I specialize in creating intuitive interfaces using Next.js, TypeScript, and Tailwind CSS. My expertise lies in translating Figma designs into dynamic and responsive websites, ensuring high-quality solutions aligned with client objectives and industry standards",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "January 2024 - August 2024",
   },
   {
     title: "Bramhaand Inc.",
