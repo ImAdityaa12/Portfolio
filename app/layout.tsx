@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import ThemeSwitch from '@/components/Theme-Switch';
 import ThemeContextProvider from '@/context/themeContext';
 import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="!scroll-smooth">
+            <GoogleTagManager gtmId="GTM-XYZ" />
             <body
                 className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
             >
