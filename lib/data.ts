@@ -6,6 +6,8 @@ import genicraft from "@/public/Genicraft.png";
 import CinemaVerse from "@/public/CinemaVerse.png";
 import ShopIt from "@/public/ShopIt.png";
 import MetaVersus from "@/public/MetaVersus.png";
+import BuddyAI from "@/public/buddya-ai.png";
+import NotJustAYoutubeClone from "@/public/youtube-project.png";
 import { BsCode } from "react-icons/bs";
 
 export const links = [
@@ -72,10 +74,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Buddy AI",
+    description:
+      "A full-stack meeting app with AI assistants, video calling, chat, and authentication, built using Next.js, Stream, PostgreSQL, and OpenAI.",
+    tags: ["Next.js", "Tailwind", "Open AI", "Inngest", 'Better Auth', 'Polar'],
+    imageUrl: NotJustAYoutubeClone,
+    url: "https://buddy-ai-eight.vercel.app/",
+  },
+  {
+    title: "Not Just a youtube Clone AI",
+    description:
+      "A modern YouTube clone with video streaming, authentication, subscriptions, comments, playlists, and real-time updates using Next.js and Mux.",
+    tags: ["Next.js", "Tailwind", "Open AI", "Gemini", "Clerk", "Upstash"],
+    imageUrl: BuddyAI,
+    url: "https://buddy-ai-eight.vercel.app/",
+  },
+  {
     title: "GeniCraft",
     description:
       "GeniCraft: AI web app ensures secure logins (Clerk), coding support (OpenAI), and aids creative projects with music and videos (Replicate).",
-    tags: ["Next.js", "Tailwind", "Open AI API", "Replicate API"],
+    tags: ["Next.js", "Tailwind", "Open AI", "Replicate", 'Clerk'],
     imageUrl: genicraft,
     url: "https://geni-craft.vercel.app",
   },
@@ -112,6 +130,13 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
+  "Node.js",
+  "Express Js",
+  "Backround Jobs",
+  "Postgresql",
+  "Reach Native",
+  "Dom Manupulation",
+  "Android Development",
   "Git",
   "Tailwind",
   "MongoDB",
