@@ -78,7 +78,7 @@ export const projectsData = [
     description:
       "A full-stack meeting app with AI assistants, video calling, chat, and authentication, built using Next.js, Stream, PostgreSQL, and OpenAI.",
     tags: ["Next.js", "Tailwind", "Open AI", "Inngest", 'Better Auth', 'Polar'],
-    imageUrl: NotJustAYoutubeClone,
+    imageUrl: BuddyAI,
     url: "https://buddy-ai-eight.vercel.app/",
   },
   {
@@ -86,7 +86,7 @@ export const projectsData = [
     description:
       "A modern YouTube clone with video streaming, authentication, subscriptions, comments, playlists, and real-time updates using Next.js and Mux.",
     tags: ["Next.js", "Tailwind", "Open AI", "Gemini", "Clerk", "Upstash"],
-    imageUrl: BuddyAI,
+    imageUrl: NotJustAYoutubeClone,
     url: "https://buddy-ai-eight.vercel.app/",
   },
   {
