@@ -79,7 +79,7 @@ export const projectsData = [
       "A modern YouTube clone with video streaming, authentication, subscriptions, comments, playlists, and real-time updates using Next.js and Mux.",
     tags: ["Next.js", "Tailwind", "Open AI", "Gemini", "Clerk", "Upstash"],
     imageUrl: NotJustAYoutubeClone,
-    url: "https://not-just-a-youtube-clone.vercel.app/s",
+    url: "https://not-just-a-youtube-clone.vercel.app/",
   },
   {
     title: "Buddy AI",
