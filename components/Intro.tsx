@@ -81,11 +81,11 @@ const Intro = () => {
         }}
       >
         <span className="font-bold">Hello, I&apos;m Aditya,</span> a
-        <span className="font-bold"> Front-End </span>enthusiast in React,
-        Next.Js, TypeScript & Figma, I Design{" "}
-        <span className="font-bold">captivating layouts</span> and{" "}
-        <span> bring them to life</span>{" "}
-        <span className="underline">with Code</span>.
+        <span className="font-bold"> Full Stack Developer</span> with 2.5+ years
+        of experience building{" "}
+        <span className="font-bold">production-grade</span> web & mobile apps
+        across React, Next.js, Node.js &{" "}
+        <span className="underline">the modern JS ecosystem</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 text-lg font-medium"

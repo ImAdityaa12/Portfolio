@@ -1,5 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import genicraft from "@/public/Genicraft.png";
@@ -8,6 +7,7 @@ import ShopIt from "@/public/ShopIt.png";
 import MetaVersus from "@/public/MetaVersus.png";
 import BuddyAI from "@/public/buddya-ai.png";
 import NotJustAYoutubeClone from "@/public/youtube-project.png";
+import Viewz from "@/public/viewz.png";
 import { BsCode } from "react-icons/bs";
 
 export const links = [
@@ -40,60 +40,60 @@ export const links = [
 export const experiencesData = [
   {
     title: "Edvanta Technologies",
-    location: "Noida",
+    location: "Noida, India",
     description:
-      "Worked as a Full-stack Developer on a scalable web application using Vue.js and Express.js, ensuring seamless frontend-backend integration and robust security measures. Collaborated with designers and QA engineers to deliver high-quality web pages and components, and participated in code reviews and optimization efforts.",
+      "Associate Fullstack Developer leading a 10-person team on the Edge Delivery Services (EDS) project — powering 17 client websites including Oxford, Maryville, and Boundless Learning. Engineered a multi-tenant SaaS platform (LXS) with Next.js + tRPC admin panel, Directus CMS, and PostgreSQL. Built the company website on Nuxt.js and developed production apps using Vue.js and Express.js.",
     icon: React.createElement(BsCode),
-    date: "August 2024 - Present",
+    date: "September 2024 - Present",
   },
   {
     title: "PrudentBit",
-    location: "Greater Noida, Greater Noida",
+    location: "Noida, India",
     description:
-      "As a Frontend developer at PrudentBit, I specialize in creating intuitive interfaces using Next.js, TypeScript, and Tailwind CSS. My expertise lies in translating Figma designs into dynamic and responsive websites, ensuring high-quality solutions aligned with client objectives and industry standards",
+      "Frontend Engineer specializing in translating Figma designs into dynamic and responsive websites using Next.js, TypeScript, and Tailwind CSS. Delivered high-quality, visually appealing web solutions aligned with client objectives and industry standards.",
     icon: React.createElement(FaReact),
     date: "January 2024 - August 2024",
-  },
-  {
-    title: "Bramhaand Inc.",
-    location: "Greater Noida, India",
-    description:
-      "I bring hands-on experience from a 3-month Front-End Developer internship, where I upskilled in TypeScript and React, transforming Figma designs into fully functional websites with precision and creativity.",
-    icon: React.createElement(CgWorkAlt),
-    date: "September 2023",
   },
   {
     title: "Sharda University",
     location: "Greater Noida, India",
     description:
-      "I am currently pursuing a B.Tech in Computer Science and Engineering, passionately delving into the realm of Frontend Technologies to complement my academic journey with practical skills and hands-on experience.",
+      "Graduated with a B.Tech in Computer Science and Engineering (AI and ML) with a 8.1 CGPA. Built a strong foundation in algorithms, data structures, and machine learning while developing full-stack web and mobile applications throughout the program.",
     icon: React.createElement(LuGraduationCap),
-    date: "2024",
+    date: "2020 - 2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Not Just a youtube Clone AI",
+    title: "Not Just a YouTube Clone",
     description:
-      "A modern YouTube clone with video streaming, authentication, subscriptions, comments, playlists, and real-time updates using Next.js and Mux.",
-    tags: ["Next.js", "Tailwind", "Open AI", "Gemini", "Clerk", "Upstash"],
+      "Full-stack YouTube-like platform with video streaming via Mux, subscriptions, playlists, comments, and AI-powered thumbnail & title generation.",
+    tags: ["Next.js", "TypeScript", "tRPC", "Clerk", "Gemini", "Open AI"],
     imageUrl: NotJustAYoutubeClone,
     url: "https://not-just-a-youtube-clone.vercel.app/",
   },
   {
     title: "Buddy AI",
     description:
-      "A full-stack meeting app with AI assistants, video calling, chat, and authentication, built using Next.js, Stream, PostgreSQL, and OpenAI.",
-    tags: ["Next.js", "Tailwind", "Open AI", "Inngest", 'Better Auth', 'Polar'],
+      "AI meeting platform with video calling, real-time chat via Stream APIs, and OpenAI-powered assistants for live support and meeting summaries.",
+    tags: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Open AI", "Better Auth"],
     imageUrl: BuddyAI,
     url: "https://buddy-ai-eight.vercel.app/",
+  },
+  {
+    title: "Viewz",
+    description:
+      "Mobile app to upload, like, search, and play videos with secure authentication and an intuitive UI.",
+    tags: ["React Native", "Expo", "Appwrite", "TypeScript", "Tailwind CSS"],
+    imageUrl: Viewz,
+    url: "https://github.com/ImAdityaa12",
   },
   {
     title: "GeniCraft",
     description:
       "GeniCraft: AI web app ensures secure logins (Clerk), coding support (OpenAI), and aids creative projects with music and videos (Replicate).",
-    tags: ["Next.js", "Tailwind", "Open AI", "Replicate", 'Clerk'],
+    tags: ["Next.js", "Tailwind", "Open AI", "Replicate", "Clerk"],
     imageUrl: genicraft,
     url: "https://geni-craft.vercel.app",
   },
@@ -130,21 +130,31 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Express Js",
-  "Backround Jobs",
-  "Postgresql",
-  "Reach Native",
-  "Dom Manupulation",
-  "Android Development",
-  "Git",
-  "Tailwind",
-  "MongoDB",
-  "Redux Toolkit",
-  "SASS",
+  "Vue.js",
+  "Nuxt.js",
+  "React Native",
+  "Tailwind CSS",
   "Framer Motion",
-  "After Effects",
-  "Premiere Pro",
+  "Node.js",
+  "Express.js",
+  "tRPC",
+  "JWT",
+  "Better Auth",
+  "Drizzle ORM",
+  "BullMQ",
+  "Redis",
+  "Appwrite",
+  "PostgreSQL",
+  "MongoDB",
+  "SQL",
+  "Prisma",
+  "Zustand",
+  "Pinia",
+  "Redux Toolkit",
+  "Git",
+  "Vercel",
+  "AWS",
+  "Clerk",
+  "Upstash",
   "Figma",
-  "Adobe Photoshop",
 ] as const;

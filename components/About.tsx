@@ -25,25 +25,24 @@ const About = () => {
     >
       <SectionHeading title="About Me" />
       <p className="mb-3">
-        <span className="font-bold">Hey there, I&apos;m Aditya</span>, a
-        passionate <span className="font-bold">Front-End developer</span> with a
-        flair for crafting immersive digital experiences. My journey into the
-        world of web <span>development</span> began with a fascination for
-        blending <span className="underline">creativity with technology</span>.
-        Proficient in{" "}
-        <span className="font-medium">React, Next.js, and TypeScript </span>,
-        <span className="font-medium">I love</span> transforming design visions
-        into{" "}
-        <span className="underline">interactive and responsive websites</span>.
+        <span className="font-bold">Hey there, I&apos;m Aditya</span>, a{" "}
+        <span className="font-bold">Full Stack Developer</span> with 2.5+ years
+        of experience building production-grade web and mobile applications.
+        I&apos;ve architected{" "}
+        <span className="underline">multi-tenant SaaS platforms</span>, led
+        engineering teams, and integrated AI APIs — working across{" "}
+        <span className="font-medium">
+          React, Next.js, Vue.js, Node.js, tRPC, and PostgreSQL
+        </span>
+        .
       </p>
       <p>
-        Beyond coding, I&apos;m an avid user of{" "}
-        <span className="font-bold">Figma</span>, translating ideas into
-        captivating visual layouts. With a keen eye for detail and a commitment
-        to staying at the forefront of technology, I&apos;m on a mission to
-        bring innovation and{" "}
-        <span className="underline">seamless functionality</span> to the digital
-        landscape.{" "}
+        Currently at{" "}
+        <span className="font-bold">Edvanta Technologies</span>, I head a
+        10-person team delivering shared codebases that power 17 client
+        websites. I enjoy the full picture — from{" "}
+        <span className="underline">system design and backend services</span> to
+        polished, responsive UIs.{" "}
         <span className="font-medium">
           Let&apos;s build something extraordinary together!
         </span>
